@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFCC"
+    android:orientation="vertical"
+    tools:context="com.jzfy.jfchangesystem" >
+    
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/tab_top_border" >
+
+        <RelativeLayout
+            android:id="@+id/market_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/tab_selector_checked_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/market_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/market_selector"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/market_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="商城"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cart_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/cart_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cart_selector"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/cart_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tab_selector_checked_bg"
+                    android:gravity="center"
+                    android:text="购物车"
+                   />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lucky_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/lucky_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/lucky_selector"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/lucky_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tab_selector_checked_bg"
+                    android:gravity="center"
+                    android:text="抽奖"
+                   />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/setting_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/setting_selector"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/setting_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tab_selector_checked_bg"
+                    android:gravity="center"
+                    android:text="设置"
+                     />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

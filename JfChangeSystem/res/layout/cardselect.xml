@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/CardBank_ICCard"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/CardBank_Show"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+        
+        <Button
+            android:id="@+id/CardOrder_ICCard"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/CardOrder_Show"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+        
+        <Button
+            android:id="@+id/CardProg_ICCard"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/CardProg_Show"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+        
+	</LinearLayout>
+
+</ScrollView>

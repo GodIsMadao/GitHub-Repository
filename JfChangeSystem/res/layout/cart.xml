@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_cart_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#DDDDDD" >
+
+        <TextView
+            android:id="@+id/tv_cart_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="欢迎 " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_cart_amount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/btn_delete_all"
+            android:gravity="center"
+            android:text="0积分" />
+
+        <Button
+            android:id="@+id/btn_delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_shape2"
+			android:layout_toLeftOf="@+id/btn_cart_lastcount" 
+            android:text="全部删除"
+            android:textColor="#FFFFFF" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_cart_lastcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape2"
+            android:text="结   算"
+            android:textColor="#FFFFFF" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_empty_cart"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/layout_cart_top"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_empty_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_empty_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的购物车为空" 
+            android:textSize="28sp"
+            />
+
+    </LinearLayout>
+        <View style="@style/line_style" />
+    
+    <ListView
+        android:id="@+id/listview_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_cart_top"
+        android:layout_marginTop="5dp"
+        android:background="#DDDDDD"
+        android:dividerHeight="10dp" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:tag="setting" >
+
+    <LinearLayout
+        android:id="@+id/layout_setting_warning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/setting_warning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="您当前无权限设置"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="80dp"
+        android:background="@drawable/product_border"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/setting_background"
+            android:gravity="center"
+            android:text="设    置"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/et_setting_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="输入密令"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+
+            <Button
+                android:id="@+id/btn_setting_confirm"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="确认" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_setting_market_counttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置商城超时时间(秒)："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_setting_market_counttime"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="输入商城超时时间"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_setting_login_counttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置登录超时时间(秒)："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_setting_login_counttime"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="输入登录超时时间"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_setting_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设   置   接   入   点  i p："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_setting_ip"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="设置接入点ip"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_setting_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设    置     端    口    号："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_setting_port"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="设置端口号"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_setting_branchid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设   置   机   构   点  i d："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_setting_branchid"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="设置机构id"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_connnect_blue"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/log_in_out"
+            android:background="@drawable/button_selector1"
+            android:focusable="true"
+            android:text="连接蓝牙" >
+        </Button>
+
+
+         <Button
+            android:id="@+id/btOpenDialogue"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_selector1"
+            android:onClick="openPortDialogueClicked"
+            android:text="连接打印机蓝牙" />
+         
+        <Button
+            android:id="@+id/btn_confirm_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_shape"
+            android:padding="5dp"
+            android:text="确认设置"
+            android:visibility="invisible" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

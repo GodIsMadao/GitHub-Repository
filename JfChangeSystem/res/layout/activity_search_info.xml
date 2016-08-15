@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.jzfy.jfchangesystem.activity.SearchInfoActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/product_border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFF6FE"
+            android:padding="10dp" >
+
+<!--             <TextView
+                android:id="@+id/tv_search_count_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="倒计时XXXs"
+                android:textSize="25sp" />
+ -->
+            <TextView
+                android:id="@+id/tv_search_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="查询积分"
+                android:textColor="#6B0000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_search_return"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_selector1"
+                android:gravity="center"
+                android:text="返回"
+                 >
+            </Button>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="输卡号查询"
+                android:textSize="25sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_card_search"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" 
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="输身份证号查询"
+                android:textSize="25sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_IDcard_search"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" 
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            >
+        <Button
+            android:id="@+id/btn_search_confirm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:layout_marginRight="15dp"
+            android:text="查询">
+        </Button>
+        <Button
+            android:id="@+id/btn_admin_logout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="退出">
+        </Button>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_card_jf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
